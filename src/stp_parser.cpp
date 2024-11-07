@@ -10,10 +10,17 @@
 
 #include <LiteMath.h>
 
+#include "clstepcore/ExpDict.h"
+#include "cleditor/STEPfile.h"
+#include "clstepcore/STEPattribute.h"
+#include "clstepcore/sdai.h"
+
 #include <stp_parser.hpp>
 
 using namespace LiteMath;
 using regexiter_t = std::sregex_token_iterator;
+
+extern void SchemaInit( Registry & );
 
 namespace STEP {
 

@@ -39,11 +39,13 @@ int main(int argc, const char **argv) {
   }
   std::cout << std::endl;
 
+  /*
   std::cout << "NORMALS: " << std::endl;
   for (size_t i = 0; i < mesh.TrianglesNum(); i++) {
       std::cout << i << " " << mesh.vNorm4f[i] << std::endl;
   }
   std::cout << std::endl;
+  */
 
   std::cout << "INDICES:" << std::endl;
   for (size_t i = 0; i < mesh.VerticesNum(); i++) {

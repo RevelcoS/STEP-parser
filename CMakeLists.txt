@@ -34,7 +34,7 @@ add_library(
 )
 target_include_directories(stl INTERFACE ${PROJECT_SOURCE_DIR}/include/)
 
-option(COMPILE_EXAMPLES ON)
+option(COMPILE_EXAMPLES "Compile examples" OFF)
 if (${COMPILE_EXAMPLES})
   add_executable(
     nurbss_stdout

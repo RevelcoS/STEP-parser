@@ -116,6 +116,7 @@ cmesh4::SimpleMesh cmesh4::LoadMeshFromSTL(const char *filepath, bool &success) 
         mesh.vPos4f[i] = LiteMath::float4(x, y, z, 1);
    }
 
+   /*
    auto rawN = stlmesh.raw_normals();
    for (size_t i = 0; i < mesh.TrianglesNum(); i++) {
        float x = rawN[SimpleMesh::POINTS_IN_TRIANGLE * i + 0];
@@ -123,6 +124,7 @@ cmesh4::SimpleMesh cmesh4::LoadMeshFromSTL(const char *filepath, bool &success) 
        float z = rawN[SimpleMesh::POINTS_IN_TRIANGLE * i + 2];
        mesh.vNorm4f[i] = LiteMath::float4(x, y, z, 1);
    }
+   */
 
    auto rawI = stlmesh.raw_tris();
    for (size_t i = 0; i < mesh.TrianglesNum(); i++) {

@@ -13,5 +13,11 @@ obj/*
 # TODO list
 TODO.txt
 
+# STEP models
+resources/*
+
+# Libraries
+external/stepcode/
+
 .vscode
 build
